@@ -3,17 +3,17 @@ buildscript {
     repositories {
         jcenter()
     }
-     android {
-      lintOptions {
-          abortOnError false
-      }
-  }
-    dependencies {
+       dependencies {
         classpath 'com.android.tools.build:gradle:2.3.3'
         classpath 'com.getkeepsafe.dexcount:dexcount-gradle-plugin:0.6.3'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
     }
 }
+ android {
+      lintOptions {
+          abortOnError false
+      }
+  }
 
 allprojects {
     repositories {
