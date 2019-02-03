@@ -26,3 +26,9 @@ ext {
     versionCode_lite = 98
     versionCode_plus = 96
 }
+android {
+      lintOptions {
+          abortOnError false
+      }
+  }
+
