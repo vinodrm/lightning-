@@ -1,9 +1,7 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'com.getkeepsafe.dexcount'
-apply plugin: 'checkstyle'
 apply plugin: 'pmd'
-apply plugin: 'findbugs'
 
 android {
     compileSdkVersion project.targetSdkVersion
@@ -119,9 +117,7 @@ dependencies {
     
 }
 
-findbugs{
-    findbugsTest.enabled=false
-}
+
 pmd {
     pmdTest.enabled=false
 }
