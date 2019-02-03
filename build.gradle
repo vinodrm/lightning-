@@ -9,13 +9,7 @@ buildscript {
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
     }
 }
- android {
-      lintOptions {
-          abortOnError false
-      }
-  }
-
-allprojects {
+ allprojects {
     repositories {
         jcenter()
         mavenCentral()
