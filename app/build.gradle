@@ -1,6 +1,9 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'com.getkeepsafe.dexcount'
+apply plugin: 'checkstyle'
+apply plugin: 'pmd'
+apply plugin: 'findbugs'
 
 android {
     compileSdkVersion project.targetSdkVersion
@@ -112,4 +115,13 @@ dependencies {
 
     // Kotlin
     compile "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+    
+    
+}
+
+findbugs{
+    findbugsTest.enabled=false
+}
+pmd {
+    pmdTest.enabled=false
 }
